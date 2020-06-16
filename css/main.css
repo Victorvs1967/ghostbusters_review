@@ -1,3 +1,4 @@
+/* Local fonts */
 @font-face {
     font-family: 'Roboto', sans-serif;
     src: url('../font/Roboto-Regular.ttf');
@@ -22,14 +23,14 @@
     font-weight: 900;
     font-style: normal;
 }
-
+/* Main styles */
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: normal;
     background-color: #fff;
 }
-
+/* Header */
 .header {
     display: flex;
     align-items: center;
@@ -38,12 +39,20 @@ body {
     padding-left: 35px;
     border-bottom: 1px solid #D4D4D4;
 }
-.line {
+.logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.logo-link:after {
+    content: "";
     width: 1px;
     height: 100%;
     background: #D4D4D4;
     margin-left: 34px;
 }
+/* Search */
 .search-input {
     background-image: url('../img/search-icon.svg');
     background-repeat: no-repeat;
@@ -56,6 +65,7 @@ body {
     line-height: 21px;
     color: #A5A5A5;
 }
+/* Menu */
 .navigation {
     width: 307px;
     display: flex;
@@ -70,6 +80,10 @@ body {
     color: #363636;
     text-decoration: none;
 }
+.navigation-link:hover {
+    color: #A5A5A5;
+}
+/* Buttons */
 .button-group {
     height: 100%;
 }
@@ -93,3 +107,10 @@ body {
     background: #5671F6;
     padding: 0 51px;
 }
+.sign-up:hover {
+    color: #A5A5A5;
+}
+.login:hover {
+    color: #A5A5A5;
+}
+/*  */
