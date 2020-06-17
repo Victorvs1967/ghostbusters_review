@@ -24,11 +24,57 @@
     font-style: normal;
 }
 /* Main styles */
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: normal;
     background-color: #fff;
+    color: #363636;
+}
+h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;    
+    color: #363636;
+    margin: 0;
+    margin-bottom: 16px;
+}
+h2 {
+    margin: 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #A5A5A5;
+        }
+h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #363636;
+    margin: 0;
+    margin-bottom: 12px;
+}
+h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #A5A5A5;
+    margin: 0;
+    margin-bottom: 32px;
+}
+p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000000;
 }
 /* Header */
 .header {
@@ -89,6 +135,7 @@ body {
 }
 .button {
     height: 100%;
+    width: 153px;
     font-size: 18px;
     line-height: 21px;
     border: none;
@@ -100,12 +147,12 @@ body {
     color: #5671F6;
     background: none;
     border-left: 1px solid #D4D4D4;
-    padding: 0 34px;
+    padding: auto;
 }
 .login {
     color: #FFFFFF;
     background: #5671F6;
-    padding: 0 51px;
+    padding: auto;
 }
 .sign-up:hover {
     color: #A5A5A5;
@@ -114,3 +161,150 @@ body {
     color: #A5A5A5;
 }
 /*  */
+.film {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #D4D4D4;
+}
+.container {
+    width: 1130px;
+}
+.film-wrapper {
+    display: flex;
+}
+.film-trailer {
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+    margin-right: 60px;
+}
+.poster-image {
+    height: 464px;
+    border-radius: 5px 5px 0px 0px;
+}
+.play-button {
+    /* button text */
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5671F6;
+    padding: 25px 81px 25px 120px;
+    /* button icon and background */
+    background-image: url('../img/play.svg');
+    background-repeat: no-repeat;
+    background-position: 81px center;
+    background-color: #fff;
+    /* button border */
+    border: 1px solid #D4D4D4;
+    border-radius: 0px 0px 5px 5px;
+}
+.play-button:hover {
+    cursor: pointer;
+}
+.film-description-text {
+    margin-bottom: 50px;
+    max-width: 514px;
+}
+.about-film {
+    display: flex;
+    margin-bottom: 34px;
+}
+.left-side {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+.right-side {
+    display: flex;
+    flex-direction: column;
+}
+.about-text {
+    display: block;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 16px;
+}
+.about-text-bold {
+    display: inline-block;
+    width: 100px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+.film-rating {
+    display: flex;
+    align-items: center;
+}
+.film-rating-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #5671F6;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    color: #5671F6;
+    margin-right: 28px;
+}
+.film-rating-text {
+    display: block;
+    margin-bottom: 7px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+.cast {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.tabs {
+    display: flex;
+    margin-bottom: 60px;
+}
+.section-title {
+    margin-right: 30px;
+}
+.section-title.active {
+    font-weight: 700;
+    color: #363636;
+}
+.tabs-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    flex-basis: 25%;
+}
+.card-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5671F6;
+}
+.en-name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A5A5A5;
+}
