@@ -281,7 +281,7 @@ p {
     align-items: center;
     flex-wrap: wrap;
 }
-.card {
+.cast-card {
     display: flex;
     align-items: center;
     margin-bottom: 35px;
