@@ -315,21 +315,19 @@ p {
     padding: 70px 0 100px 0;
     background: #F3F3F3;
 }
-.news-title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    color: #000000;
-    padding-bottom: 65px;
-}
 .news-cards {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+.section-news-title {
+    font-weight: 700;
+    margin-bottom: 65px;
+    color: #000000;
+}
 .news-card {
-    width: 260px;
+    flex-basis: 23%;
     height: 160px;
     background: #FFFFFF;
     border-radius: 5px;
@@ -341,13 +339,12 @@ p {
     font-size: 14px;
     line-height: 16px;    
     color: #000000;    
-    margin-bottom: 14px;
 }
-.news-text {
+.news-title {
+    margin-top: 14px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 14px;
-    line-height: 16px;    
-    color: #000000;
-    
+    line-height: 16px;
+    color: #000000;    
 }
