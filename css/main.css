@@ -131,11 +131,13 @@ p {
 }
 /* Buttons */
 .button-group {
+    display: flex;
     height: 100%;
+    width: 306px;
 }
 .button {
     height: 100%;
-    width: 153px;
+    width: 50%;
     font-size: 18px;
     line-height: 21px;
     border: none;
@@ -160,6 +162,26 @@ p {
 .login:hover {
     color: #A5A5A5;
 }
+/* Mobile buttons */
+.mobile-buttons {
+    display: none;
+}
+.m-menu-button, .m-search-button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.menu-line {
+    display: block;
+    height: 2px;
+    width: 18px;
+    margin: 3px 0 3px 0;
+    background: #363636;
+    border-radius: 40px;
+}
 /*  */
 .film {
     display: flex;
@@ -178,7 +200,9 @@ p {
     display: flex;
     flex-direction: column;
     width: 358px;
+    margin-left: 0;
     margin-right: 60px;
+
 }
 .poster-image {
     height: 464px;
@@ -281,6 +305,9 @@ p {
     align-items: center;
     flex-wrap: wrap;
 }
+.cast-cards {
+    display: flex;
+}
 .cast-card {
     display: flex;
     align-items: center;
@@ -347,4 +374,149 @@ p {
     font-size: 14px;
     line-height: 16px;
     color: #000000;    
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .card-image {
+        width: 70px;
+        height: 70px;
+    }
+    .navigation {
+        margin-right: 22px;
+    }
+    .navigation-link {
+        margin-left: 10px;
+    }
+    .header {
+        padding-left: 20px;
+    }
+    .logo-link:after {
+        margin-left: 20px;
+    }
+}
+@media (max-width: 991px) {
+    .container {
+        max-width: 760px;
+    }
+    .about-text-bold {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .cast-card {
+        flex-basis: 47%;
+    }
+    .card-image {
+        width: 100px;
+        height: 100px;
+    }
+    .news-card {
+        flex-basis: 48%;
+        margin-bottom: 20px;
+    }
+    .header {
+        padding-right: 2.5%;
+        padding-left: 2.5%;
+    }
+    .navigation {
+        display: none;
+    }
+    .logo-link:after {
+        display: none;
+    }
+    .search-input {
+        display: none;
+    }
+    .button-group {
+        display: none;
+    }
+    .mobile-buttons {
+        display: block;
+    }    
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+    .film {
+        padding-top: 50px;
+    }
+    .film-wrapper {
+        flex-wrap: wrap;
+    }
+    .film-trailer {
+        width: 100%;
+    }
+    .poster-image {
+        /* height: 100%; */
+        object-fit: cover;
+}
+    .film-description {
+        order: -1;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 576px) {
+    .header {
+        padding-right: 4%;
+        padding-left: 4%;
+    }    
+    .container {
+        max-width: 90%;
+    }
+    .film-trailer .poster {
+        width: 100%;
+    }
+    .film-trailer {
+        margin-bottom: 30px;
+    }
+    .film-description {
+        order: 1;
+        margin-bottom: 0;
+    }
+    .film-description-title {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 12px;
+    }
+    .film-description-title-original {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 26px;
+    }
+    .film-description-text {
+        font-size: 14px;
+        line-height: 150%;
+        margin-bottom: 40px;
+    }
+    .about-film {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .about-text {
+        display: flex;
+    }
+    .about-text-bold {
+        font-size: 16px;
+        line-height: 19px;        
+    }
+    .about-text-reg {
+        font-size: 16px;
+        line-height: 19px;        
+    }
+    .cast {
+        padding-top: 75px;
+        padding-bottom: 55px;
+    }
+    .tabs-content {
+        display: block;
+    }
+    .play-button {
+        font-size: 14px;
+        line-height: 16px;
+    } 
 }
